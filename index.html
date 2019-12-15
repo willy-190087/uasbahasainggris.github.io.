@@ -1,0 +1,322 @@
+
+<script src="http://www.geocities.com/yono_pati/kembangapi.js" type="text/javascript"> </script> <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/green-bintang-jatuh.js" type="text/javascript"></script> <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/daun-berguguran.js" type="text/javascript"></script> <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju-2.js" type="text/javascript"></script> 
+<script type="text/javascript">
+     //Configure below to change URL path to the snow image 
+  var snowsrc="http://3.bp.blogspot.com/--hEgrJEXAzo/Tt-5f_2SzAI/AAAAAAAAFi8/Uf-VH61UbDY/s400/snow.gif" 
+  // Configure below to change number of snow to render 
+  var no = 30; 
+  // Configure whether snow should disappear after x seconds (0=never): 
+  var hidesnowtime = 0; 
+  // Configure how much snow should drop down before fading ("windowheight" or "pageheight") 
+  var snowdistance = "pageheight";
+///////////Stop Config//////////////////////////////////
+  var ie4up = (document.all) ? 1 : 0; 
+  var ns6up = (document.getElementById&&!document.all) ? 1 : 0;
+    function iecompattest(){ 
+    return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body 
+    }
+  var dx, xp, yp;    // coordinate and position variables 
+  var am, stx, sty;  // amplitude and step variables 
+  var i, doc_width = 800, doc_height = 600; 
+  
+  if (ns6up) { 
+    doc_width = self.innerWidth; 
+    doc_height = self.innerHeight; 
+  } else if (ie4up) { 
+    doc_width = iecompattest().clientWidth; 
+    doc_height = iecompattest().clientHeight; 
+  }
+  dx = new Array(); 
+  xp = new Array(); 
+  yp = new Array(); 
+  am = new Array(); 
+  stx = new Array(); 
+  sty = new Array(); 
+  snowsrc=(snowsrc.indexOf("dynamicdrive.com")!=-1)? "http://3.bp.blogspot.com/--hEgrJEXAzo/Tt-5f_2SzAI/AAAAAAAAFi8/Uf-VH61UbDY/s400/snow.gif" : snowsrc 
+  for (i = 0; i < no; ++ i) {  
+    dx[i] = 0;                        // set coordinate variables 
+    xp[i] = Math.random()*(doc_width-50);  // set position variables 
+    yp[i] = Math.random()*doc_height; 
+    am[i] = Math.random()*20;         // set amplitude variables 
+    stx[i] = 0.02 + Math.random()/10; // set step variables 
+    sty[i] = 0.7 + Math.random();     // set step variables 
+        if (ie4up||ns6up) { 
+      if (i == 0) { 
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><a href=\"http://dynamicdrive.com\"><img src='"+snowsrc+"' border=\"0\"><\/a><\/div>"); 
+      } else { 
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>"); 
+      } 
+    } 
+  }
+  function snowIE_NS6() {  // IE and NS6 main animation function 
+    doc_width = ns6up?window.innerWidth-10 : iecompattest().clientWidth-10; 
+        doc_height=(window.innerHeight && snowdistance=="windowheight")? window.innerHeight : (ie4up && snowdistance=="windowheight")?  iecompattest().clientHeight : (ie4up && !window.opera && snowdistance=="pageheight")? iecompattest().scrollHeight : iecompattest().offsetHeight; 
+    for (i = 0; i < no; ++ i) {  // iterate for every dot 
+      yp[i] += sty[i]; 
+      if (yp[i] > doc_height-50) { 
+        xp[i] = Math.random()*(doc_width-am[i]-30); 
+        yp[i] = 0; 
+        stx[i] = 0.02 + Math.random()/10; 
+        sty[i] = 0.7 + Math.random(); 
+      } 
+      dx[i] += stx[i]; 
+      document.getElementById("dot"+i).style.top=yp[i]+"px"; 
+      document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i])+"px";  
+    } 
+    snowtimer=setTimeout("snowIE_NS6()", 10); 
+  }
+    function hidesnow(){ 
+        if (window.snowtimer) clearTimeout(snowtimer) 
+        for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden" 
+    } 
+        
+if (ie4up||ns6up){ 
+    snowIE_NS6(); 
+        if (hidesnowtime>0) 
+        setTimeout("hidesnow()", hidesnowtime*1000) 
+        }
+</script>
+
+</style>
+<!-- Jan Recode KONTOL SUSAH W Bikin :( W kan NUUB  -->
+<!DOCTYPE html>
+ <html>
+  <head>
+   <title>☠UAS BAHASA INGGRIS☠</title>
+    <link type="text/css" href="https://anicrack-indo.netii.net/error.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Jolly+Lodger" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Pirata+One" rel="stylesheet">
+       <link href="http://fonts.googleapis.com/css?family=Grand%20Hotel" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Amatic%20SC" rel="stylesheet" type="text/css">
+         <link href="http://fonts.googleapis.com/css?family=New Rocker" rel="stylesheet" type="text/css">
+          <meta property="og:title" content="'WHITE EYES ATTACKERS'">
+           <meta property="description" content="Fuck ╭∩╮（︶︿︶）╭∩╮">
+            <meta property="og:author" content="Anonymous all Indonesia ">
+             <meta charset="UTF-8">
+              <iframe width="0" height="0" src="https://api.soundcloud.com/tracks/240051120/stream?client_id=a3e059563d7fd3372b49b37f00a00bcf" frameborder="0" allowfullscreen></iframe>
+               <style>
+
+     body,td,th {
+             /* [disabled]color: #000; */
+     }
+
+
+
+.title {
+font-family: 'Pirata One', cursive;padding-top:1px; -webkit-text-stroke-width: 3px; -webkit-text-stroke-color: #DF0101;letter-spacing: 6px; font-size: 150px;opacity: 1; margin: 0;
+color:#000000;
+}
+                   </style>
+                  <script src="https://pastebin.com/raw/yuyr1zyF">
+                 </script>
+                <style>
+		.rain
+		{font-size:60px;			
+			animation: lighting 3s linear infinite;
+			opacity:0;
+
+
+		} 
+
+
+
+
+
+
+		@keyframes rain 
+		{
+			0%
+			{
+				background-position: 0% 0%;
+			}
+
+
+			100%
+			{
+				background-position: 20% 100%;
+			}
+		} 
+
+
+
+
+
+
+		@keyframes lighting
+		{
+			0%
+			{
+				opacity:0;
+			}
+			10%
+			{
+				opacity:0;
+			}
+			13%
+			{
+				opacity:1;
+			}
+			14%
+			{
+				opacity:0;
+			}
+			20%
+			{
+				opacity:1;
+			}
+			21%
+			{
+				opacity:0;
+			}
+			24%
+			{
+				opacity:0;
+			}
+			29%
+			{
+				opacity:1;
+			}
+			40%
+			{
+				opacity:0;
+			}
+			54%
+			{
+				opacity:1;
+			}
+			56%
+			{
+				opacity:0;
+			}
+			59%
+			{
+				opacity:1;
+			}
+			60%
+			{
+				opacity:0;
+			}
+			64%
+			{
+				opacity:1;
+			}
+			74%
+			{
+				opacity:0;
+			}
+			84%
+			{
+				opacity:1;
+			}
+			89%
+			{
+				opacity:0;
+			}
+			93%{
+				opacity:1;
+			}
+			94%
+			{
+				opacity:0;
+			}
+			95%
+			{
+				opacity:1;
+			}
+			96%
+			{
+				opacity:0;
+			}
+			98%
+			{
+				opacity:1;
+			}
+			99%
+			{
+				 opacity:0;}
+			100%
+			{
+				opacity:1;
+			}
+		} 
+                   </style>
+                  <style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Jolly+Lodger'); 
+.glitchtext { justify-content: center; align-items: center; display: flex; } 
+.text { font-family: "Jolly Lodger"; font-size: 15.5px; color: cyan; text-shadow: 0 0 12.5px blue; margin: 4%; margin-top: 2%; } 
+.dud { color: red; } h1 { color: cyan; font-family: "Jolly Lodger"; font-size: 120px; font-weight: 400; text-align: center; margin: 0; line-height: 0; animation: glitch1 2.5s infinite; } h1:nth-child(2) { color: red; animation: glitch2 2.5s infinite; } h1:nth-child(3) { color: blue; animation: glitch3 2.5s infinite; } @keyframes glitch1 { 0% { transform: none; opacity: 1; } 7% { transform: skew(-0.5deg, -0.9deg); opacity: 0.75; } 10% { transform: none; opacity: 1; } 27% { transform: none; opacity: 1; } 30% { transform: skew(0.8deg, -0.1deg); opacity: 0.75; } 35% { transform: none; opacity: 1; } 52% { transform: none; opacity: 1; } 55% { transform: skew(-1deg, 0.2deg); opacity: 0.75; } 50% { transform: none; opacity: 1; } 72% { transform: none; opacity: 1; } 75% { transform: skew(0.4deg, 1deg); opacity: 0.75; } 80% { transform: none; opacity: 1; } 100% { transform: none; opacity: 1; } } @keyframes glitch2 { 0% { transform: none; opacity: 0.25; } 7% { transform: translate(-2px, -3px); opacity: 0.5; } 10% { transform: none; opacity: 0.25; } 27% { transform: none; opacity: 0.25; } 30% { transform: translate(-5px, -2px); opacity: 0.5; } 35% { transform: none; opacity: 0.25; } 52% { transform: none; opacity: 0.25; } 55% { transform: translate(-5px, -1px); opacity: 0.5; } 50% { transform: none; opacity: 0.25; } 72% { transform: none; opacity: 0.25; } 75% { transform: translate(-2px, -6px); opacity: 0.5; } 80% { transform: none; opacity: 0.25; } 100% { transform: none; opacity: 0.25; } } @keyframes glitch3 { 0% { transform: none; opacity: 0.25; } 7% { transform: translate(2px, 3px); opacity: 0.5; } 10% { transform: none; opacity: 0.25; } 27% { transform: none; opacity: 0.25; } 30% { transform: translate(5px, 2px); opacity: 0.5; } 35% { transform: none; opacity: 0.25; } 52% { transform: none; opacity: 0.25; } 55% { transform: translate(5px, 1px); opacity: 0.5; } 50% { transform: none; opacity: 0.25; } 72% { transform: none; opacity: 0.25; } 75% { transform: translate(2px, 6px); opacity: 0.5; } 80% { transform: none; opacity: 0.25; } 100% { transform: none; opacity: 0.25; } }
+                  </style>
+                 <style>
+#rubberBand { -webkit-animation-name: rubberBand; animation-name: rubberBand; -webkit-animation-duration: 6s; animation-duration: 6s; -webkit-animation-fill-mode: both; animation-fill-mode: both; } @-webkit-keyframes rubberBand { 0% { -webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1); } 30% { -webkit-transform: scale3d(1.25, 0.75, 1); transform: scale3d(1.25, 0.75, 1); } 40% { -webkit-transform: scale3d(0.75, 1.25, 1); transform: scale3d(0.75, 1.25, 1); } 50% { -webkit-transform: scale3d(1.15, 0.85, 1); transform: scale3d(1.15, 0.85, 1); } 65% { -webkit-transform: scale3d(.95, 1.05, 1); transform: scale3d(.95, 1.05, 1); } 75% { -webkit-transform: scale3d(1.05, .95, 1); transform: scale3d(1.05, .95, 1); } 100% { -webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1); } } @keyframes rubberBand { 0% { -webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1); } 30% { -webkit-transform: scale3d(1.25, 0.75, 1); transform: scale3d(1.25, 0.75, 1); } 40% { -webkit-transform: scale3d(0.75, 1.25, 1); transform: scale3d(0.75, 1.25, 1); } 50% { -webkit-transform: scale3d(1.15, 0.85, 1); transform: scale3d(1.15, 0.85, 1); } 65% { -webkit-transform: scale3d(.95, 1.05, 1); transform: scale3d(.95, 1.05, 1); } 75% { -webkit-transform: scale3d(1.05, .95, 1); transform: scale3d(1.05, .95, 1); } 100% { -webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1); }
+                 </style>
+                <style>
+.img-muter{ -moz-transition:all .8s ease-in-out; -ms-transition:all .8s ease-in-out; -o-transition:all .8s ease-in-out; -webkit-transition:all .8s ease-in-out; transition:all .8s ease-in-out } 
+.img-muter:hover{ -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); -webkit-transform:rotate(360deg); transform:rotate(360deg); }
+              </style>
+             </head>
+            <body>
+           <body bgcolor="black">
+          <script type="text/javascript">
+
+       </script>
+      <br>
+     <br>
+    <br>
+   <center>
+  <div class="error">
+ <div id="glitchtext">
+<h1>UAS</h1>
+ <h1>UAS</h1>
+  <h1>UAS</h1>
+   <br>
+    <br>
+      
+       <br>
+       <br>
+       <div class="error">
+        <h1>PAPER</h1>
+         <h1>PAPER</h1>
+          <h1>PAPER</h1>
+           </div>
+            </div>
+             <br>
+            
+              
+             <center>
+             <a href="https://i.postimg.cc/6pKvMHj9/GIF-190715-233104.gif"><img src="https://i.postimg.cc/6pKvMHj9/GIF-190715-233104.gif" alt="https://i.postimg.cc/6pKvMHj9/GIF-190715-233104.gif" border="0">
+             <br>
+             <br>
+        
+                    <h1 class="title"> </h1>
+        
+                  	 
+                  	 
+                  	 <script>var motto = new Motto(".title", {
+lyric: "WILLY RAFI S" ,
+showUpSpeed: 150,
+flashSpeed: 100,
+flashTimeout: 1000,
+callback: function () {
+}
+});
+                   </script>
+                <br>
+                <br>
+                <br>
+               <div style="font-family:Jolly Lodger;font-size: 60px; text-shadow: 5px 5px 5px red; -webkit-text-stroke: 2px green;">Keberhasilan yang paling manis adalah mencapai yang dikatakan orang lain sebagai tidak mungkin.
+               </div>
+              <br>
+             <br>
+            <font face="New Rocker" color="red" size="300px"><u>Bahasa Inggris
+           </u>
+          </font>
+         <br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ_8yubpRfxHEw5AUBwncJEojTjCdpMv8tbbPP6U4PRoaQ5Ssuo" width="200px" height="200px">
+       <br>
+      <font face="Grand Hotel" size="5" color="#000000">Copyright &copy; 2019 - <font face="Amatic SC" size="6" color="#000000">WILLY RAFI S
+     </font>
+    </font>
+   </center>
+  </body>
+ </html>
+ 
